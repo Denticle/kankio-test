@@ -26,7 +26,7 @@ spec:
   ) {
     node(POD_LABEL) {
         stage('Clone') {
-            git url: 'https://github.com/DragonTwoYang/kankio-test.git/'
+            git url: 'https://github.com/Denticle/kankio-test.git/'
         }
         stage('Compile') {
             container('golang') {
