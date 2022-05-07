@@ -24,7 +24,7 @@ spec:
         secretName: regcred
     """.stripIndent()
   ) {
-    node(slave) {
+    node(POD_LABEL) {
         stage('Clone') {
             git url: 'https://github.com/Denticle/kankio-test.git/'
         }
